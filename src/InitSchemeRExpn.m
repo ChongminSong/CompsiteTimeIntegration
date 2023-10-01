@@ -24,7 +24,7 @@ end
 pcoe = pCoefficients(p, r);
 
 disp(['r = ', num2str(r)]);
-disp(['Seclected rhoInfty = ', num2str(abs(pcoe(end)), '%.5f')]);
+disp(['Selected rhoInfty = ', num2str(abs(pcoe(end)), '%.5f')]);
 
 qrcoe = [zeros(1,p) 1];
 qcoe = shiftPolycoe(qrcoe,r);

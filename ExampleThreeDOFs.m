@@ -22,8 +22,8 @@ dbstop if error;
 addpath(".\src\");
 
 %% Parameters for composite time integration
-scheme = 'MP'; % 'M' or 'MP1'
-nSubStep = 3; % 1 to 6 for M-scheme; 1, 2, 3, 5 for (M+1)-scheme
+scheme = 'M'; % 'M' or 'MP1'
+nSubStep = 4; % 1 to 6 for M-scheme; 1, 2, 3, 5 for (M+1)-scheme
 rhoInfty = 0; % for M-scheme only
 
 %% Parameters of 3-DOF system
@@ -130,7 +130,7 @@ grid on
 legend('show')
 xlabel('Time');
 ylabel('Force')
-title('Rection Force');
+title('Reaction Force');
 
 
 function [uRef, vRef, aRef] = ThreeDOFsRefSln(M,K,F0,tp)
